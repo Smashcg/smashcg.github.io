@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html lang="pb-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Calculadora de Critico</title>
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        
+        <div class="bg">
+            <!--<img class="bg-img" src="https://konachan.net/image/e1697240d5fb64444c8a70a33f458bee/Konachan.com%20-%2037314%20armor%20long_hair%20orange_eyes%20purple_hair%20sacred_saga%20saint_seiya%20scorpion.jpg" alt="Shura ilustrativo">
+            -->
+            <div class="texto">
+                <h1>Calculadora de Critico SSA</h1>
+                <label for="inputPCrit">Qual seu P.Crit Level?</label> 
+                <br>
+                <input id="inputPCrit" type="number">
+                <br>
+                <label for="inputBasePCrit">Qual seu Base P.Crit?</label> 
+                <br>
+                <input id="inputBasePCrit" type="number">
+                <br>
+                <button class="botao-cacular" onclick="calcular()">
+                    Calcule !
+                </button>
+
+                <h2>Quer saber mais sobre o Crítico no jogo?</h2>
+                <p>Veja o Eberuto</p>
+            </div>
+        </div>    
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jMcJMEniUQY?start=349" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        </div>
+    </body>
+</html>
+<script>
+
+    function calcular(){
+        pcrit= Number(inputPCrit.value)
+        basecrit = Number(inputBasePCrit.value)
+        var chanceCritica =(((pcrit + 150)/150)*basecrit)
+        
+        alert("Você tem " + (chanceCritica) + "% de Critar!")
+    }
+
+
+
+</script>
