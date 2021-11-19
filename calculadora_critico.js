@@ -1,4 +1,4 @@
-function calcular(){
+function calcular() {
     pcrit= Number(inputPCrit.value)
     basecrit = Number(inputBasePCrit.value)
     var chanceCritica =(((pcrit + 150)/150)*basecrit)

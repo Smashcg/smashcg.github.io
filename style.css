@@ -1,17 +1,11 @@
-
-.bg {
-    overflow: hidden;
-    position: relative;
+.logo {
+    background: #1167B1;
+    text-align: center;
 }
 
-.bg-img {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 
 .texto {
+    background: linear-gradient(#1167B1,#03254C);
     position: relative;
     text-align: center;
 }
@@ -21,9 +15,10 @@ h1, h2 {
     text-align: center;
 }
 
-label, p {
+label, p, input {
     font-size: 20px;
     text-align: center;
+    margin: 1em 0;
 }
 
 button {
@@ -33,12 +28,21 @@ button {
 }
 
 .video {
+    background: #03254C;
     width: 540px;
     margin: 0 auto;
 }
-
+footer{
+    background: linear-gradient(#03254c,black);
+}
 
 @media screen and (max-width: 480px) {
-    
-    
+    .logo, .video{
+        width: auto;
+    }
+
+    img, iframe{
+        width: 100%;
+    }
+
 }
