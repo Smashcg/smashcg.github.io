@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <html lang="pb-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Calculadora de Critico</title>
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="calculadora_critico.js"></script>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculadora de Critico</title>
 
-    <body>
-        <div class="logo">
-            <img  src="logo_ssa.png" alt="logo Saint Seiya Awakening">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="calculadora_critico.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo_ssa.png" alt="logo Saint Seiya Awakening" />
+    </div>
+    <div class="texto">
+        <h1>Calculadora de Critico SSA</h1>
+        <label for="inputPCrit">Qual seu P.Crit Level?</label>
+        <br />
+        <input id="inputPCrit" type="number" />
+        <br />
+        <label for="inputBasePCrit">Qual seu Base P.Crit?</label>
+        <br />
+        <input id="inputBasePCrit" type="number" />
+        <br />
+        <button class="botao-cacular" onclick="calcular()">Calcule !</button>
+
+        <h2>Quer saber mais sobre o Crítico no jogo?</h2>
+        <p>Veja o Eberuto</p>
+
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jMcJMEniUQY?start=349"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
-        <div class="texto">
-            <h1>Calculadora de Critico SSA</h1>
-            <label for="inputPCrit">Qual seu P.Crit Level?</label> 
-            <br>
-            <input id="inputPCrit" type="number">
-            <br>
-            <label for="inputBasePCrit">Qual seu Base P.Crit?</label> 
-            <br>
-            <input id="inputBasePCrit" type="number">
-            <br>
-            <button class="botao-cacular" onclick="calcular()">
-                Calcule !
-            </button>
+    </div>
+    <footer>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </footer>
+</body>
 
-            <h2>Quer saber mais sobre o Crítico no jogo?</h2>
-            <p>Veja o Eberuto</p>
-            
-            <div class="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/jMcJMEniUQY?start=349" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>   
-       <footer>
-            <br><br><br><br><br><br><br><br><br><br>
-
-       </footer>
-       
-    </body>
 </html>
