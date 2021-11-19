@@ -8,7 +8,7 @@
 
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-
+        <script src="/calculadora_critico.js"></script>
     </head>
 
     <body>
@@ -40,14 +40,3 @@
         </div>
     </body>
 </html>
-<script>
-
-    function calcular(){
-        pcrit= Number(inputPCrit.value)
-        basecrit = Number(inputBasePCrit.value)
-        var chanceCritica =(((pcrit + 150)/150)*basecrit)
-        var critrestante = (((150*(100/basecrit))-150)-pcrit)
-        alert("Você tem " + (chanceCritica) + "% de Critar!\nFaltam " + Math.ceil(critrestante) + " P.crit para alcaçar os 100%!");
-    }
-
-</script>
